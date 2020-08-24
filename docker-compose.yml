@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  testaddin1:
+    image: testaddin1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
